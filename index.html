@@ -5,48 +5,136 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - Blockivo</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 24px; }
-        h1 { color: #111; border-bottom: 2px solid #eee; padding-bottom: 12px; }
-        h2 { color: #222; margin-top: 28px; }
-        a { color: #0066cc; }
-        .footer { margin-top: 40px; font-size: 0.9em; color: #777; border-top: 1px solid #eee; padding-top: 16px; }
+        :root {
+            --bg-color: #fcfcfc;
+            --text-color: #2b2b2b;
+            --heading-color: #111827;
+            --card-bg: #ffffff;
+            --border-color: #e5e7eb;
+            --primary-color: #0f766e;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.7;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 820px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+        }
+        h1 {
+            color: var(--heading-color);
+            font-size: 2rem;
+            margin-top: 0;
+            margin-bottom: 8px;
+        }
+        .date {
+            color: #6b7280;
+            font-size: 0.95rem;
+            margin-bottom: 28px;
+        }
+        h2 {
+            color: var(--heading-color);
+            font-size: 1.25rem;
+            margin-top: 32px;
+            margin-bottom: 12px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 6px;
+        }
+        p, li {
+            font-size: 1rem;
+            color: #374151;
+        }
+        ul {
+            padding-left: 24px;
+            margin-bottom: 16px;
+        }
+        li {
+            margin-bottom: 6px;
+        }
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .contact-box {
+            background-color: #f3f4f6;
+            padding: 16px 20px;
+            border-radius: 8px;
+            margin-top: 16px;
+            border-left: 4px solid var(--primary-color);
+        }
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 0.875rem;
+            color: #9ca3af;
+        }
     </style>
 </head>
 <body>
 
+<div class="container">
     <h1>Privacy Policy for Blockivo</h1>
-    <p>Last updated: August 2026</p>
+    <div class="date">Effective Date: August 28, 2026</div>
 
-    <p>This Privacy Policy governs the manner in which <strong>Blockivo</strong> ("we", "our", or "the Game") collects, uses, maintains, and discloses information collected from users of the Game.</p>
+    <p>Welcome to <strong>Blockivo</strong>. We are committed to maintaining the privacy and trust of our players. This Privacy Policy outlines what information is processed when you install and play Blockivo, how third-party services handle technical data, and what rights you have regarding your device data.</p>
 
-    <h2>1. Information We Collect</h2>
-    <p>We do not collect any personal identifying information directly (such as names, phone numbers, or email addresses). However, the Game uses third-party services that may automatically collect certain device and usage data.</p>
+    <h2>1. Information We Do Not Collect</h2>
+    <p>Blockivo is designed as an offline-friendly puzzle game. We do not require account registration, login credentials, social media linking, or access to your personal identifiers (such as your name, phone number, physical address, or contacts list).</p>
 
-    <h2>2. Third-Party Advertising (Unity Ads)</h2>
-    <p>This Game integrates <strong>Unity Ads</strong> to serve advertisements (interstitial and rewarded video ads). Unity Ads may automatically collect and process certain data, including:</p>
+    <h2>2. Local Game Storage</h2>
+    <p>Your game progress—including high scores, unlocked levels, collected coins, and audio settings—is stored locally on your device storage. We do not upload or sync this gameplay state to any private external database.</p>
+
+    <h2>3. Third-Party Advertising & Analytics (Unity Ads)</h2>
+    <p>To support ongoing development and keep the game free to play, Blockivo displays non-intrusive advertisements (such as rewarded videos and interstitial ads) through <strong>Unity Ads</strong> (provided by Unity Technologies).</p>
+    <p>Unity Ads automatically collects and processes specific non-personally identifiable technical data to serve, optimize, and measure ad performance, including:</p>
     <ul>
-        <li>Google Advertising ID (GAID / AAID)</li>
-        <li>IP address (used to infer approximate country/city location)</li>
-        <li>Device information (hardware model, operating system, screen resolution)</li>
-        <li>Ad interaction and performance metrics</li>
+        <li><strong>Device Identifiers:</strong> Google Advertising ID (GAID/AAID) or vendor identifiers.</li>
+        <li><strong>Technical Information:</strong> Device make and model, operating system version, device language, and screen resolution.</li>
+        <li><strong>Network Data:</strong> IP address (used strictly to deduce approximate geographic region such as country or city level).</li>
+        <li><strong>Ad Interaction Data:</strong> Ad delivery metrics, views, clicks, and completion rates of rewarded videos.</li>
     </ul>
-    <p>For more details on how Unity Technologies processes your data, please review the <a href="https://unity.com/legal/privacy-policy" target="_blank" rel="noopener">Unity Privacy Policy</a>.</p>
+    <p>You can read more about how Unity handles advertising data by reviewing the <a href="https://unity.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer">Unity Privacy Policy</a>.</p>
 
-    <h2>3. Children’s Privacy (COPPA)</h2>
-    <p>Blockivo does not knowingly collect personally identifiable information from children under 13. Third-party advertising networks operating in our Game are configured to comply with child privacy regulations and applicable age restrictions.</p>
+    <h2>4. Managing Your Ad Preferences & Opt-Out</h2>
+    <p>You have full control over personalized advertising directly from your device settings:</p>
+    <ul>
+        <li>On Android: Go to <strong>Settings &gt; Google &gt; Ads</strong> and choose <em>"Reset advertising ID"</em> or <em>"Delete advertising ID"</em> to limit personalized tracking.</li>
+        <li>Within Ads: You may tap the Privacy icon (usually marked with an 'i' or AdChoices symbol) shown within Unity Ads to review your choices or opt out of interest-based ads.</li>
+    </ul>
 
-    <h2>4. Data Security and Retention</h2>
-    <p>We do not store user data on external personal servers. All ad-related technical data is handled directly and securely by Unity Ads in compliance with industry security standards.</p>
+    <h2>5. Children's Privacy (COPPA & GDPR Compliance)</h2>
+    <p>Blockivo does not target or knowingly collect data from children under the age of 13 (or under 16 in the European Economic Area). Third-party advertising components inside the game are configured to operate in compliance with child privacy protection regulations (including COPPA and Google Play Families Policies where applicable).</p>
 
-    <h2>5. Changes to This Privacy Policy</h2>
-    <p>We reserve the right to update this policy at any time. Any updates will be posted directly on this page with an updated revision date.</p>
+    <h2>6. Data Security</h2>
+    <p>Because we do not maintain a remote database with personal information, we do not store or transmit your sensitive personal data. Advertising communications between your device and Unity Ads infrastructure are transmitted using industry-standard encrypted channels (HTTPS / TLS).</p>
 
-    <h2>6. Contact Us</h2>
-    <p>If you have any questions or concerns regarding this Privacy Policy, feel free to contact us via email at: <strong>soufianebougarne@gmail.com</strong></p>
+    <h2>7. Policy Updates</h2>
+    <p>We may update this Privacy Policy from time to time to reflect game enhancements, SDK version updates, or legal requirements. Any modifications will be posted directly to this URL with an updated revision date.</p>
 
-    <div class="footer">
-        <p>&copy; 2026 Blockivo. All rights reserved.</p>
+    <h2>8. Contact & Support</h2>
+    <p>If you have any questions, feedback, or requests regarding this Privacy Policy or your data, please reach out directly:</p>
+    <div class="contact-box">
+        <strong>Developer Contact:</strong><br>
+        Email: <a href="mailto:soufianebougarne@gmail.com">soufianebougarne@gmail.com</a>
     </div>
+
+    <footer>
+        &copy; 2026 Blockivo. All rights reserved.
+    </footer>
+</div>
 
 </body>
 </html>
